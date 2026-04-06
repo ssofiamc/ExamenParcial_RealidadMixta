@@ -3878,7 +3878,6 @@ GameObject:
   - component: {fileID: 346671328}
   - component: {fileID: 346671327}
   - component: {fileID: 346671326}
-  - component: {fileID: 346671325}
   - component: {fileID: 346671324}
   m_Layer: 0
   m_Name: Main Camera
@@ -3919,23 +3918,6 @@ MonoBehaviour:
   maxDistancePointer: 4.5
   disPointerObject: 0.95
   hitPoint: {x: 0, y: 0, z: 0}
---- !u!114 &346671325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 346671322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247771041181b754db6e1dc8c1ffe71e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CardboardSimulator
-  UseCardboardSimulator: 1
-  horizontalSpeed: 2
-  verticalSpeed: 2
-  rotationX: 0
-  rotationY: 0
 --- !u!114 &346671326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11804,8 +11786,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f06e451c3f2251a4c86a7404d49c6ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GrabObject
-  soundGrab: {fileID: 0}
-  soundPlace: {fileID: 0}
   type: Objeto
   spawner: {fileID: 1744942693}
 --- !u!4 &987375306 stripped
@@ -17189,8 +17169,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82a869385ab316740a8dffee759898ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GrabManager
-  interactables: []
-  Objects: []
+  interactables:
+  - {fileID: 987375303}
+  - {fileID: 235403121}
+  - {fileID: 106774600}
+  Objects:
+  - {fileID: 987375303}
   heldItem: {fileID: 0}
 --- !u!4 &1458832743
 Transform:
@@ -25746,14 +25730,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2128544320}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 247771041181b754db6e1dc8c1ffe71e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardboardSimulator
-  UseCardboardSimulator: 1
-  horizontalSpeed: 0.5
-  verticalSpeed: 0.5
+  UseCardboardSimulator: 0
+  horizontalSpeed: 2
+  verticalSpeed: 2
   rotationX: 0
   rotationY: 0
 --- !u!4 &2128544322

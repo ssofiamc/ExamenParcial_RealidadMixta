@@ -1027,7 +1027,6 @@ GameObject:
   - component: {fileID: 527014911}
   - component: {fileID: 527014910}
   - component: {fileID: 527014909}
-  - component: {fileID: 527014908}
   - component: {fileID: 527014907}
   m_Layer: 0
   m_Name: Main Camera
@@ -1068,23 +1067,6 @@ MonoBehaviour:
   maxDistancePointer: 4.5
   disPointerObject: 0.95
   hitPoint: {x: 0, y: 0, z: 0}
---- !u!114 &527014908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527014905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247771041181b754db6e1dc8c1ffe71e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CardboardSimulator
-  UseCardboardSimulator: 1
-  horizontalSpeed: 2
-  verticalSpeed: 2
-  rotationX: 0
-  rotationY: 0
 --- !u!114 &527014909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1424,12 +1406,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603142602}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 247771041181b754db6e1dc8c1ffe71e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardboardSimulator
-  UseCardboardSimulator: 1
+  UseCardboardSimulator: 0
   horizontalSpeed: 0.5
   verticalSpeed: 0.5
   rotationX: 0

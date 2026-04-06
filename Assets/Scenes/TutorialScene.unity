@@ -981,9 +981,7 @@ GameObject:
   - component: {fileID: 207885709}
   - component: {fileID: 207885708}
   - component: {fileID: 207885707}
-  - component: {fileID: 207885706}
   - component: {fileID: 207885705}
-  - component: {fileID: 207885712}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1023,23 +1021,6 @@ MonoBehaviour:
   maxDistancePointer: 4.5
   disPointerObject: 0.95
   hitPoint: {x: 0, y: 0, z: 0}
---- !u!114 &207885706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207885703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247771041181b754db6e1dc8c1ffe71e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CardboardSimulator
-  UseCardboardSimulator: 1
-  horizontalSpeed: 2
-  verticalSpeed: 2
-  rotationX: 0
-  rotationY: 0
 --- !u!114 &207885707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1169,22 +1150,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &207885712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207885703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.PhysicsRaycaster
-  m_EventMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_MaxRayIntersections: 0
 --- !u!1001 &238902493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5409,12 +5374,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503066248}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 247771041181b754db6e1dc8c1ffe71e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardboardSimulator
-  UseCardboardSimulator: 1
+  UseCardboardSimulator: 0
   horizontalSpeed: 0.5
   verticalSpeed: 0.5
   rotationX: 0
@@ -5876,8 +5841,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f06e451c3f2251a4c86a7404d49c6ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GrabObject
-  soundGrab: {fileID: 0}
-  soundPlace: {fileID: 0}
   type: Objeto
   spawner: {fileID: 1003824984}
 --- !u!1001 &1653907390
